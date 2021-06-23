@@ -1,12 +1,15 @@
 import { Button } from 'antd';
-import logo from './logo.svg';
 import './App.css';
-import Home from './Home';
 
 function App() {
+
+  function antdclk(ev) {
+    console.log('antdclk:', ev)
+  }
+  
   return (
     <div className="App">
-      <Button type="primary">antd点击</Button>
+      <Button type="primary" onClick={antdclk}>antd点击</Button>
     </div>
   );
 }
