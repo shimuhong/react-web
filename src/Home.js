@@ -7,7 +7,7 @@ function App() {
     console.log('antdclk:', ev)
     console.log(process.env)
 
-    Http.defaults.baseURL = 'shimuhong.com:8090'
+    Http.defaults.baseURL = 'http://shimuhong.com:8090'
     Http.get('/api2').then(res => {
         console.log(res)
     }).catch(error => {
