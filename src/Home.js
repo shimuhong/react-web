@@ -1,10 +1,18 @@
 import { Button } from 'antd';
 import './App.css';
-
+import Http from "axios";
 function App() {
 
   function antdclk(ev) {
     console.log('antdclk:', ev)
+    console.log(process.env)
+
+    Http.defaults.baseURL = 'shimuhong.com:8090'
+    Http.get('/api2').then(res => {
+        console.log(res)
+    }).catch(error => {
+        console.error(error)
+    })
   }
   
   return (
