@@ -11,10 +11,19 @@ function App() {
     Http.get('/api2',{headers: {
       'Content-type': 'application/json',
       'x-requested-with': 'XMLHttpRequest'
-  }}).then(res => {
-        console.log(res)
+    }}).then(res => {
+      console.log(res)
     }).catch(error => {
-        console.error(error)
+      console.error(error)
+    })
+
+    Http.post('/api3', {asd: '11111'}, {headers: {
+      'Content-type': 'application/json',
+      'x-requested-with': 'XMLHttpRequest'
+    }}).then(res => {
+      console.log(res)
+    }).catch(error => {
+      console.error(error)
     })
   }
   
