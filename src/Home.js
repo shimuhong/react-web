@@ -8,7 +8,10 @@ function App() {
     console.log(process.env)
 
     Http.defaults.baseURL = 'http://shimuhong.com:8090'
-    Http.get('/api2').then(res => {
+    Http.get('/api2',{headers: {
+      'Content-type': 'application/json',
+      'x-requested-with': 'XMLHttpRequest'
+  }}).then(res => {
         console.log(res)
     }).catch(error => {
         console.error(error)
