@@ -1,30 +1,22 @@
 import { Button } from 'antd';
 import './App.css';
-import Http from "axios";
+import { get, post } from './fetch';
 function App() {
 
   function antdclk(ev) {
-    console.log('antdclk:', ev)
-    console.log(process.env)
-
-    Http.defaults.baseURL = 'http://shimuhong.com:8090'
-    Http.get('/api2',{headers: {
-      'Content-type': 'application/json',
-      'x-requested-with': 'XMLHttpRequest'
-    }}).then(res => {
+    console.log(this)
+    console.log(window)
+    get('/api2',{ee: '22244'}).then(res => {
+      console.log(res)
+    }).catch(error => {
+      console.error(error)
+    })
+    post('/api3',{ee: '22244'}).then(res => {
       console.log(res)
     }).catch(error => {
       console.error(error)
     })
 
-    Http.post('/api3', {asd: '11111'}, {headers: {
-      'Content-type': 'application/json',
-      'x-requested-with': 'XMLHttpRequest'
-    }}).then(res => {
-      console.log(res)
-    }).catch(error => {
-      console.error(error)
-    })
   }
   
   return (
