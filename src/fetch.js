@@ -7,11 +7,17 @@ const baseURL = {
   production: 'http://shimuhong.com:8090/'
 }[_env]
 
-axios.defaults.baseURL = baseURL
+const instance = axios.create({
+  baseURL,
+  timeout: 10000,
+  headers: {},
+  accessToken: null
+});
+
 
 export function get(url, params = null) {
     return new Promise((resolve, reject) => {
-      return axios({
+      return instance({
         method:'get',
         url,
         params
@@ -26,7 +32,7 @@ export function get(url, params = null) {
 }
 export function post(url, data = {}) {
   return new Promise((resolve, reject) => {
-    return axios({
+    return instance({
       method: 'post',
       url,
       data
