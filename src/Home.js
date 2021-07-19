@@ -1,29 +1,24 @@
-import { Button } from 'antd';
+import React, { Component, Fragment } from "react";
 import './App.css';
-import { get, post } from './fetch';
-function App() {
+import src from "./images/100.png";
+class Home extends Component {
 
-  function antdclk(ev) {
-    console.log(this)
-    console.log(window)
-    get('/api2',{ee: '22244'}).then(res => {
-      console.log(res)
-    }).catch(error => {
-      console.error(error)
-    })
-    post('/api3',{ee: '22244'}).then(res => {
-      console.log(res)
-    }).catch(error => {
-      console.error(error)
-    })
+  constructor ( props ) {
+    super(props)
+    this.state = {}
+  }
 
+  render () {
+    return (
+      <Fragment>
+        <div className="App">
+          <img className="img" alt="is a images!" src={src} />
+        </div>
+        
+      </Fragment>
+    );
   }
   
-  return (
-    <div className="App">
-      <Button type="primary" onClick={antdclk}>antd点击</Button>
-    </div>
-  );
 }
 
-export default App;
+export default Home;
