@@ -3,6 +3,7 @@ import './App.css';
 import src from "./images/100.png";
 import beian from "./images/beian.png";
 import { Footer } from "antd/lib/layout/layout";
+import Test from './Test';
 class Home extends Component {
 
   constructor ( props ) {
@@ -14,6 +15,7 @@ class Home extends Component {
     return (
       <Fragment>
         <div className="App">
+          <Test history={this.props.history} />
           <img className="img" alt="is a images!" src={src} />
           
         </div>

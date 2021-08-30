@@ -8,6 +8,14 @@
   bottom: 0;
   width: 100%;
 }
+.header {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+.header .ant-btn {
+  margin: 0 5px;
+}
 .footer>img {
   margin-right: 5px;
 }
