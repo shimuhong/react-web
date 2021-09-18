@@ -15,7 +15,7 @@ class Home extends Component {
         <Header className="header">
           <span>正在准备上线更新内容,敬请期待!</span>
           <span>
-            <sapn>Ant Design 测试 </sapn>
+            <span>Ant Design 测试 </span>
             <Button type="primary" onClick={this.setPost}>post请求</Button>
             <Button type="primary" onClick={this.setGet}>get请求</Button>
             <Button type="primary" onClick={this.detail}>跳转详情页</Button>
