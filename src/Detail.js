@@ -5,6 +5,10 @@ class Detail extends Component {
       <div className="Detail">
         <div>联系电话: 13920096993</div>
         <div>微信: 微信号同电话</div>
+        <div>欢迎访问我的CSDN社区:</div>
+        <div>
+          <a href="https://blog.csdn.net/weixin_34403976">https://blog.csdn.net/weixin_34403976</a>
+        </div>
         <div>
           本网站非盈利性质,纯属个人爱好,有任何指导或建议欢迎随时联系我!
         </div>
