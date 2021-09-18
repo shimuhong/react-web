@@ -11,10 +11,18 @@
 .header {
   color: #fff;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 .header .ant-btn {
   margin: 0 5px;
+}
+.header.ant-layout-header {
+  padding: 0 30px;
+}
+.content {
+  padding-top: 20px;
+  font-size: 2rem;
+  color: #666;
 }
 .footer>img {
   margin-right: 5px;
@@ -23,7 +31,7 @@
   text-align: center;
 }
 .App .img {
-  max-height: 70vh;
+  max-height: 60vh;
   max-width: 80vw;
 }
 
@@ -60,4 +68,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+.Detail {
+  padding: 30px;
+  font-size: 1rem;
 }

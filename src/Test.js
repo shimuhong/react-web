@@ -13,12 +13,11 @@ class Home extends Component {
     return (
       <Fragment>
         <Header className="header">
-          <span>正在准备上线更新内容,敬请期待!</span>
           <span>
-            <span>Ant Design 测试 </span>
-            <Button type="primary" onClick={this.setPost}>post请求</Button>
-            <Button type="primary" onClick={this.setGet}>get请求</Button>
-            <Button type="primary" onClick={this.detail}>跳转详情页</Button>
+            <span>Ant Design </span>
+            <Button type="primary" onClick={this.setPost}>post</Button>
+            <Button type="primary" onClick={this.setGet}>get</Button>
+            <Button type="primary" onClick={this.detail}>联系我</Button>
           </span>
             
 

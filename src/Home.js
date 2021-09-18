@@ -16,6 +16,7 @@ class Home extends Component {
       <Fragment>
         <div className="App">
           <Test history={this.props.history} />
+          <div className="content">正在准备上线更新内容,敬请期待!</div>
           <img className="img" alt="is a images!" src={src} />
           
         </div>
