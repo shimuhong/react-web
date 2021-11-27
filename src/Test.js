@@ -26,8 +26,8 @@ class Home extends Component {
       
     );
   }
-  setPost = ( ev ) => {
-
+  setPost = ( ev ) => { // dataList
+    post('/dataList',{id: 1})
     post('/api3',{ee: '22244'}).then(res => {
       console.log(res)
     }).catch(error => {
