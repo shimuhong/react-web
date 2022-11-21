@@ -2,7 +2,8 @@ import React, { Component, Fragment } from "react";
 import { Button } from 'antd';
 import './App.css';
 import { get, post } from './fetch';
-import { Header } from "antd/lib/layout/layout";
+// import { Header } from "antd/lib/layout/layout";
+import { DefaultHeader } from '@ant-design/pro-layout';
 class Home extends Component {
   constructor ( props ) {
     super(props)
@@ -12,7 +13,7 @@ class Home extends Component {
   render () {
     return (
       <Fragment>
-        <Header className="header">
+        <DefaultHeader className="header">
           <span>
             <span>Ant Design </span>
             <Button type="primary" onClick={this.setPost}>post</Button>
@@ -21,7 +22,7 @@ class Home extends Component {
           </span>
             
 
-        </Header>
+        </DefaultHeader>
       </Fragment>
       
     );

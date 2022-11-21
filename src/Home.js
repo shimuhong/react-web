@@ -2,7 +2,8 @@ import React, { Component, Fragment } from "react";
 import './App.css';
 import src from "./images/100.png";
 import beian from "./images/beian.png";
-import { Footer } from "antd/lib/layout/layout";
+// import { Footer } from "antd/lib/layout/layout";
+// import { DefaultFooter } from '@ant-design/pro-layout';
 import Test from './Test';
 class Home extends Component {
 
@@ -20,12 +21,16 @@ class Home extends Component {
           <img className="img" alt="is a images!" src={src} />
           
         </div>
-        <Footer className="footer">
-        <img alt="beian!" src={beian} />
-        <span className="beianText" onClick={window.location.href='www.beian.gov.com'}>津ICP备18003125号</span>
-        </Footer>
+        <div className="footer">
+          <img alt="beian!" src={beian} />
+          <span className="beianText" onClick={this.goGov}>津ICP备18003125号</span>
+        </div>
       </Fragment>
     );
+  }
+
+  goGov = ( ev ) => { // 
+    window.location.href = 'https://beian.miit.gov.cn/';
   }
   
 }
