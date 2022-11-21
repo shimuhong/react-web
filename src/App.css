@@ -1,4 +1,4 @@
-@import '~antd/dist/antd.css';
+/* @import '~antd/dist/antd.css'; */
 .footer {
   text-align: center;
   padding: 20px;
@@ -7,6 +7,13 @@
   position: fixed;
   bottom: 0;
   width: 100%;
+
+}
+.footer .beianText{
+  cursor: pointer;
+}
+.footer .beianText:hover {
+  text-decoration: underline;
 }
 .header {
   color: #fff;

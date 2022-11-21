@@ -22,7 +22,7 @@ class Home extends Component {
         </div>
         <Footer className="footer">
         <img alt="beian!" src={beian} />
-        津ICP备18003125号
+        <span className="beianText" onClick={window.location.href='www.beian.gov.com'}>津ICP备18003125号</span>
         </Footer>
       </Fragment>
     );
