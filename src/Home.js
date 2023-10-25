@@ -23,7 +23,7 @@ class Home extends Component {
         </div>
         <div className="footer">
           <img alt="beian!" src={beian} />
-          <span className="beianText" onClick={this.goGov}>津ICP备18003125号</span>
+          <span className="beianText" onClick={this.goGov}>津ICP备18003125号-1</span>
         </div>
       </Fragment>
     );
